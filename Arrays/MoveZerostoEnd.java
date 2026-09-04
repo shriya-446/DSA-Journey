@@ -8,8 +8,8 @@ public class MoveZerostoEnd {
             }            
         }
             while (j < arr.length) {
-            arr[j] = 0;
-            j++;
+                arr[j] = 0;
+                j++;
             }
     }       
 }
