@@ -13,5 +13,5 @@ public class SecondLargest {
             }
         }
         System.out.println("Second largest: " + sl);
-    }
+    }// Update largest and second largest elements
 }
