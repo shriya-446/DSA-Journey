@@ -9,4 +9,4 @@ public class LargestElement {
         }
         System.out.println("Largest element: " + max);
     }
-}
+}// Find the largest element in the array
