@@ -1,5 +1,6 @@
 class Solution {
     public int[] rearrangeArray(int[] nums) {
+
         int[] ans = new int[nums.length];
 
         int pos = 0;
@@ -10,8 +11,7 @@ class Solution {
             if (nums[i] > 0) {
                 ans[pos] = nums[i];
                 pos += 2;
-            } 
-            else {
+            } else {
                 ans[neg] = nums[i];
                 neg += 2;
             }
