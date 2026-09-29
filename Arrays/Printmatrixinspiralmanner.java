@@ -12,19 +12,19 @@ class Solution {
 
         while (top <= bottom && left <= right) {
 
-            // Left → Right
+            // Left to Right
             for (int i = left; i <= right; i++) {
                 ans.add(matrix[top][i]);
             }
             top++;
 
-            // Top → Bottom
+            // Top to Bottom
             for (int i = top; i <= bottom; i++) {
                 ans.add(matrix[i][right]);
             }
             right--;
 
-            // Right → Left
+            // Right to Left
             if (top <= bottom) {
                 for (int i = right; i >= left; i--) {
                     ans.add(matrix[bottom][i]);
@@ -32,7 +32,7 @@ class Solution {
                 bottom--;
             }
 
-            // Bottom → Top
+            // Bottom to Top
             if (left <= right) {
                 for (int i = bottom; i >= top; i--) {
                     ans.add(matrix[i][left]);
